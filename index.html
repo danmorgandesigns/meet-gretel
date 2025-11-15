@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Gretel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-gray-900 transition">
+          <i class="fas fa-ellipsis-h text-2xl"></i>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-gray-900 transition">Meet Gretel</a>
+          <a href="trails.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Trails Routes</a>
+          <a href="pins.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Dropping Pins</a>
+          <a href="export.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Exporting Data</a>
+          <a href="sync.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">iCloud Sync</a>
+          <a href="support.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Support</a>
+        </div>
+
+        <div class="flex-1"></div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded transition">Meet Gretel</a>
+          <a href="trails.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Trails Routes</a>
+          <a href="pins.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Dropping Pins</a>
+          <a href="export.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Exporting Data</a>
+          <a href="sync.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">iCloud Sync</a>
+          <a href="support.html" class="text-gray-400 cursor-not-allowed pointer-events-none opacity-50">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Video Section -->
+    <section class="py-12 sm:py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <video id="gretel-video" class="w-full rounded-lg" muted loop playsinline>
+          <source src="images/gretel-animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="flex justify-center gap-4 mt-6">
+          <button id="play-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition">
+            <i class="fas fa-play mr-2"></i>Play
+          </button>
+          <button id="stop-btn" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded transition">
+            <i class="fas fa-stop mr-2"></i>Stop
+          </button>
+        </div>
+           <p class="text-med classic-subtitle mt-4">Designed specifically for professionals who need accurate field data collection without the recreational features that complicate workflow.</p>
+           <p class="text-med classic-subtitle mt-2">Clean, focused tools for serious land management work.</p>
+      </div>
+   
+    </section>
+
+
+
+    <!-- Feature Blocks -->
+    <section class="py-16 sm:py-24 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="space-y-16">
+          <!-- Feature Block 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Professional Trail Development</h2>
+              <p class="text-med text-gray-600 leading-relaxed">
+                Create detailed trail maps with GPS precision for new trail construction, existing trail documentation, and maintenance planning. 
+                Record exact routes with customizable accuracy settings to meet surveying standards. Automatically calculate trail length and elevation 
+                profiles essential for accessibility compliance and difficulty ratings.
+              </p>
+            </div>
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+          </div>
+
+          <!-- Feature Block 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Comprehensive Field Documentation</h2>
+              <p class="text-med text-gray-600 leading-relaxed">
+                Document everything that matters for professional land management. Mark invasive species locations, infrastructure maintenance needs, 
+                damaged signage, erosion issues, safety hazards, and botanical specimens. Each point captures detailed descriptions, custom categories, 
+                and visual coding systems that integrate with your existing management protocols.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature Block 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Seamless Personal Device Integration</h2>
+              <p class="text-med text-gray-600 leading-relaxed">
+                Sync your field data automatically across all your Apple devices signed into the same iCloud account. 
+                Start data collection on your iPhone in the field, review and refine on your iPad or Apple Silicon Mac — 
+                all with the same up-to-date information. No additional cloud services or IT infrastructure required for individual workflow management.
+              </p>
+            </div>
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+          </div>
+
+          <!-- Feature Block 4 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Industry-Standard Data Export</h2>
+              <p class="text-med text-gray-600 leading-relaxed">
+              Export trail data in formats that integrate directly with GIS systems, CAD software, and municipal databases. 
+              Trail routes export as geoJSON, GTX, KML, and TCX files. Point data exports as CSV, geoJSON, JSON, or KML for 
+              seamless integration with ArcGIS, QGIS, AutoCAD, and other professional mapping platforms.
+              </p>
+            </div>
+          </div>          
+
+          <!-- Feature Block 5 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Instant Team Communication</h2>
+              <p class="text-med text-gray-600 leading-relaxed">
+                Share critical findings immediately — safety hazards, equipment failures, or urgent maintenance needs can be communicated 
+                instantly to supervisors and maintenance crews with exact GPS coordinates and photographic documentation.
+              </p>
+            </div>
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+          </div>
+
+          <!-- Feature Block 6 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Secure & Compliant</h2>
+              <p class="text-med text-gray-600 leading-relaxed">
+              EAll data remains within your organization's Apple ecosystem. No third-party cloud services means simplified compliance 
+              with municipal data policies and environmental protection regulations.
+              </p>
+            </div>
+          </div>    
+
+          <!-- Feature Block 7 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Professional Use Cases:</h2>
+              <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
+                <li>Trail construction and routing documentation</li>
+                <li>Botanical garden specimen mapping and maintenance</li>
+                <li>Forest management and invasive species tracking</li>
+                <li>Park infrastructure maintenance planning</li>
+                <li>Environmental compliance documentation</li>
+                <li>Research site establishment and monitoring</li>
+              </ul>
+            </div>
+            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+              <span class="text-gray-500">Image Placeholder</span>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <!-- Hero Section with Logo -->
+    <section class="py-16 sm:py-24 text-center bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <!-- App Logo -->
+        <div class="mb-8">
+          <img src="images/gretel-icon.png" alt="Gretel App Icon" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto">
+          <p class="text-gray-600 mt-[-6px]">Gretel Trail & Field Mapping</p>
+        </div>
+
+        <!-- App Store Badge -->
+        <div class="mb-12">
+          <img src="images/app-store.svg" alt="App Store Badge" class="h-14 mx-auto">
+          <p class="text-gray-600 mt-4">Coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center border-t border-gray-700 pt-8">
+        <a href="https://danmorgandesigns.com" class="text-gray-400 mb-4">© 2025 Dan Morgan Designs, LLC</a><p></p>
+        <a href="privacy.html" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

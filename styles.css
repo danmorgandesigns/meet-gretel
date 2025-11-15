@@ -1,0 +1,45 @@
+/* Custom CSS */
+
+@font-face {
+  font-family: 'EspySansBold14';
+  src: url('https://raw.githubusercontent.com/danmorgandesigns/classic/main/fonts/EspySansBold-14.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/danmorgandesigns/classic/main/fonts/EspySansBold-14.woff') format('woff'),
+    url('https://raw.githubusercontent.com/danmorgandesigns/classic/main/fonts/EspySansBold-14.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EspySansBold16';
+  src: url('https://raw.githubusercontent.com/danmorgandesigns/classic/main/fonts/EspySansBold-16.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/danmorgandesigns/classic/main/fonts/EspySansBold-16.woff') format('woff'),
+    url('https://raw.githubusercontent.com/danmorgandesigns/classic/main/fonts/EspySansBold-16.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.classic-subtitle {
+  font-family: 'EspySansBold14', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+  font-smooth: never;
+  /* Non-standard, but some support */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  image-rendering: pixelated;
+}
