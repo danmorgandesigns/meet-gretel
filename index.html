@@ -72,6 +72,7 @@
     <section class="py-16 sm:py-24 bg-gray-50">
       <div class="max-w-4xl mx-auto px-4">
         <div class="space-y-16">
+
           <!-- Feature Block 1 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
@@ -82,14 +83,11 @@
                 profiles essential for accessibility compliance and difficulty ratings.
               </p>
             </div>
-            <img src="images/field-doc.png" alt="Comprehensive Field Documentation" class="h-64 object-cover">
+            <img src="images/field-doc.png" alt="Comprehensive Field Documentation" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/field-doc.png', 'Comprehensive Field Documentation')">
           </div>
 
           <!-- Feature Block 2 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500">Image Placeholder</span>
-            </div>
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Comprehensive Field Documentation</h2>
               <p class="text-med text-gray-600 leading-relaxed">
@@ -98,7 +96,8 @@
                 and visual coding systems that integrate with your existing management protocols.
               </p>
             </div>
-          </div>
+            <img src="images/field-doc.png" alt="Comprehensive Field Documentation" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/field-doc.png', 'Comprehensive Field Documentation')">
+          </div>    
 
           <!-- Feature Block 3 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -110,16 +109,11 @@
                 all with the same up-to-date information. No additional cloud services or IT infrastructure required for individual workflow management.
               </p>
             </div>
-            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500">Image Placeholder</span>
-            </div>
+            <img src="images/icloud-sync.png" alt="Seamless Personal Device Integration" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/icloud-sync.png', 'Seamless Personal Device Integration')">
           </div>
 
           <!-- Feature Block 4 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500">Image Placeholder</span>
-            </div>
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Industry-Standard Data Export</h2>
               <p class="text-med text-gray-600 leading-relaxed">
@@ -128,7 +122,8 @@
               seamless integration with ArcGIS, QGIS, AutoCAD, and other professional mapping platforms.
               </p>
             </div>
-          </div>          
+            <img src="images/export.png" alt="Industry-Standard Data Export" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export.png', 'Industry-Standard Data Export')">
+          </div>            
 
           <!-- Feature Block 5 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -139,24 +134,20 @@
                 instantly to supervisors and maintenance crews with exact GPS coordinates and photographic documentation.
               </p>
             </div>
-            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500">Image Placeholder</span>
-            </div>
+            <img src="images/share.png" alt="Instant Team Communication" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/share.png', 'Instant Team Communication')">
           </div>
 
           <!-- Feature Block 6 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500">Image Placeholder</span>
-            </div>
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Secure & Compliant</h2>
               <p class="text-med text-gray-600 leading-relaxed">
-              EAll data remains within your organization's Apple ecosystem. No third-party cloud services means simplified compliance 
+              All data remains within your organization's Apple ecosystem. No third-party cloud services means simplified compliance 
               with municipal data policies and environmental protection regulations.
               </p>
             </div>
-          </div>    
+            <img src="images/field-doc.png" alt="Comprehensive Field Documentation" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/field-doc.png', 'Comprehensive Field Documentation')">
+          </div>     
 
           <!-- Feature Block 7 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -171,9 +162,7 @@
                 <li>Research site establishment and monitoring</li>
               </ul>
             </div>
-            <div class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500">Image Placeholder</span>
-            </div>
+
           </div>
 
 
@@ -182,6 +171,16 @@
       </div>
     </section>
   </main>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+    <div class="relative max-w-4xl w-full">
+      <img id="modalImage" src="" alt="" class="w-full h-auto rounded-lg">
+      <button onclick="closeModal()" class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 transition">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+    </div>
+  </div>
 
       <!-- Hero Section with Logo -->
     <section class="py-16 sm:py-24 text-center bg-white">

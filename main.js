@@ -36,4 +36,30 @@ document.addEventListener('DOMContentLoaded', function() {
       video.currentTime = 0;
     });
   }
+
+  // Close modal when clicking outside the image
+  const modal = document.getElementById('imageModal');
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
 });
+
+// Modal functions
+function openModal(imageSrc, imageAlt) {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = imageSrc;
+  modalImage.alt = imageAlt;
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal.classList.add('hidden');
+  document.body.style.overflow = 'auto';
+}
