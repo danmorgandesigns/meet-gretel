@@ -43,3 +43,7 @@ button:active {
   -moz-osx-font-smoothing: auto;
   image-rendering: pixelated;
 }
+
+.color-link {
+  color: #007AFF; /* Dodger Blue */
+}

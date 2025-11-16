@@ -88,6 +88,37 @@
             </div>
             <img src="images/export.png" alt="Industry-Standard Data Export" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export.png', 'Industry-Standard Data Export')">
           </div>   
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-2">Routes Export Formats:</h2>
+          <div class="ml-4">
+              <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
+                <li><span class="font-bold">GeoJSON — </span>A lightweight, JSON-based format that's widely supported by web mapping libraries and GIS applications, making it ideal for web-based trail visualization.</li>
+                <li><span class="font-bold">GPX — </span>The standard format for GPS devices and fitness apps, containing track points with elevation and timestamp data that's perfect for importing into Garmin, Strava, or other outdoor apps.</li>
+                <li><span class="font-bold">KML — </span>Google's mapping format that works seamlessly with Google Earth and Google Maps, allowing users to view routes in 3D terrain or share via Google's ecosystem.</li>
+                <li><span class="font-bold">TCX — </span>Garmin's Training Center XML format, specifically designed for fitness tracking with detailed workout metrics like heart rate zones and performance data.</li>
+              </ul>
+            </div>
+            </div>
+            <img src="images/export-trails.png" alt="Route Export Formats" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export-trails.png', 'Routes Export Formats')">
+          </div> 
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-2">POI Export Formats:</h2>
+          <div class="ml-4">
+              <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
+                <li><span class="font-bold">JSON — </span>A simple, structured text format that's easy to parse programmatically and ideal for developers who want to integrate POI data into their own applications.</li>
+                <li><span class="font-bold">CSV — </span>The universal spreadsheet format that opens in Excel or Google Sheets, perfect for non-technical users who want to edit or analyze POI data in familiar tools.</li>
+                <li><span class="font-bold">GeoJSON — </span>Same as routes - a web-friendly format that displays POI markers perfectly in mapping applications and websites.</li>
+                <li><span class="font-bold">KML — </span>Allows POIs to appear as placemarks in Google Earth with custom icons, descriptions, and the ability to organize into folders for easy navigation.</li>
+              </ul>
+            </div>
+            </div>
+            <img src="images/export-pois.png" alt="POI Export Formats" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export-pois.png', 'POI Export Formats')">
+          </div>           
+
         </div>
       </div>
     </section>
