@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
+  const subjectField = document.getElementById('subject');
 
   form.addEventListener('submit', (e) => {
     // Validate form before submission
@@ -24,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
       return false;
+    }
+
+    // Append #gretel tag to subject
+    if (subjectField.value && !subjectField.value.includes('#gretel')) {
+      subjectField.value = subjectField.value.trim() + ' #gretel';
     }
   });
 
