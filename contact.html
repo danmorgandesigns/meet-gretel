@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Meet Gretel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-gray-900 transition flex items-center gap-2">
+            <img src="images/wave.svg" alt="Meet Gretel" class="h-5 w-auto">
+            <span>Meet Gretel</span>
+          </a>
+          <a href="trails.html" class="text-gray-700 hover:text-gray-900 transition flex items-center gap-2">
+            <img src="images/hiking.svg" alt="Trail Routes" class="h-5 w-auto">
+            <span>Trail Routes</span>
+          </a>
+          <a href="pins.html" class="text-gray-700 hover:text-gray-900 transition flex items-center gap-2">
+            <img src="images/pin.svg" alt="Dropping Pins" class="h-5 w-auto">
+            <span>Dropping Pins</span>
+          </a>
+          <a href="export.html" class="text-gray-700 hover:text-gray-900 transition flex items-center gap-2">
+            <img src="images/export.svg" alt="Exporting Data" class="h-5 w-auto">
+            <span>Exporting Data</span>
+          </a>
+          <a href="sync.html" class="text-gray-700 hover:text-gray-900 transition flex items-center gap-2">
+            <img src="images/sync.svg" alt="iCloud Sync" class="h-5 w-auto">
+            <span>iCloud Sync</span>
+          </a>
+          <span class="color-link transition flex items-center gap-2">
+            <img src="images/blue-question.svg" alt="Contact" class="h-5 w-auto">
+            <span>Contact</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Icons -->
+        <div class="md:hidden flex space-x-4">
+          <a href="index.html" class="text-gray-700 hover:text-gray-900 transition">
+            <img src="images/tight-wave.svg" alt="Meet Gretel" class="h-5 w-auto ml-2">
+          </a>
+          <a href="trails.html" class="text-gray-700 hover:text-gray-900 transition">
+            <img src="images/tight-hiking.svg" alt="Trails Routes" class="h-5 w-auto ml-2">
+          </a>
+          <a href="pins.html" class="text-gray-700 hover:text-gray-900 transition">
+            <img src="images/tight-pin.svg" alt="Dropping Pins" class="h-5 w-auto ml-2">
+          </a>
+          <a href="export.html" class="text-gray-700 hover:text-gray-900 transition">
+            <img src="images/tight-export.svg" alt="Exporting Data" class="h-5 w-auto ml-2">
+          </a>
+          <a href="sync.html" class="text-gray-700 hover:text-gray-900 transition">
+            <img src="images/tight-sync.svg" alt="iCloud Sync" class="h-5 w-auto ml-2">
+          </a>
+          <span class="text-gray-700 cursor-default transition">
+            <img src="images/tight-blue-question.svg" alt="Contact" class="h-5 w-auto ml-2">
+          </span>
+        </div>
+
+        <div class="flex-1"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-2xl mx-auto px-4">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h1>
+        <p class="text-lg text-gray-600 mb-12">Have questions about Gretel? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <!-- Contact Form -->
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/mnnwpyyn"
+          method="POST"
+          class="space-y-6"
+          novalidate
+        >
+          <!-- Name Field -->
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+              Name <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              placeholder="Your name"
+            >
+            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+              Email Address <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              placeholder="your@email.com"
+            >
+            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+          </div>
+
+          <!-- Subject Field -->
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+              Subject <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              placeholder="What is this about?"
+            >
+            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+          </div>
+
+          <!-- Message Field -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+              Message <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="6"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
+              placeholder="Your message..."
+            ></textarea>
+            <span class="error-message text-red-500 text-sm mt-1 hidden"></span>
+          </div>
+
+          <!-- Success Message -->
+          <div id="successMessage" class="hidden p-4 bg-green-50 border border-green-200 text-green-800 rounded-lg">
+            Thank you for your message! We'll get back to you soon.
+          </div>
+
+          <!-- Error Message -->
+          <div id="errorMessage" class="hidden p-4 bg-red-50 border border-red-200 text-red-800 rounded-lg">
+            There was an error submitting the form. Please try again.
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="text-white font-semibold py-3 px-8 rounded-full transition duration-200 flex items-center justify-center gap-2"
+            style="background-color: #007aff; width: fit-content;"
+            onmouseover="this.style.opacity = '0.8'"
+            onmouseout="this.style.opacity = '1'"
+          >
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+
+          <p class="text-sm text-gray-500 text-center">
+            We respect your privacy and will never share your email address.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center border-t border-gray-700 pt-8">
+        <a href="https://danmorgandesigns.com" class="text-gray-400 mb-4">© 2025 Dan Morgan Designs, LLC</a><p></p>
+        <a href="privacy.html" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
