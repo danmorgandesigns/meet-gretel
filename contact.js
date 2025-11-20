@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const subjectField = document.getElementById('subject');
+  const thankYouModal = document.getElementById('thankYouModal');
+  const modalOkButton = document.getElementById('modalOkButton');
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     // Validate form before submission
     if (!form.checkValidity()) {
       e.preventDefault();
@@ -27,10 +29,39 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     }
 
+    e.preventDefault(); // Intercept default submission
+
     // Append #gretel tag to subject
     if (subjectField.value && !subjectField.value.includes('#gretel')) {
       subjectField.value = subjectField.value.trim() + ' #gretel';
     }
+
+    // Submit via fetch to Formspree
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        // Show custom modal instead of Formspree's default
+        thankYouModal.classList.remove('hidden');
+        form.reset();
+      } else {
+        // Show error message div
+        document.getElementById('errorMessage').classList.remove('hidden');
+      }
+    } catch (error) {
+      document.getElementById('errorMessage').classList.remove('hidden');
+    }
+  });
+
+  // Modal OK button handler
+  modalOkButton.addEventListener('click', () => {
+    thankYouModal.classList.add('hidden');
+    window.location.href = 'index.html'; // Redirect to home
   });
 
   // Clear error messages on input
