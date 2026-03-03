@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
+
 <body class="bg-white">
   <!-- Navigation -->
   <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -81,43 +86,64 @@
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Industry-Standard Data Export</h2>
               <p class="text-med text-gray-600 leading-relaxed">
-              Export trail data in formats that integrate directly with GIS systems, CAD software, and municipal databases. 
-              Trail routes export as geoJSON, GTX, KML, and TCX files. Point data exports as CSV, geoJSON, JSON, or KML for 
-              seamless integration with ArcGIS, QGIS, AutoCAD, and other professional mapping platforms.
+                Export trail data in formats that integrate directly with GIS systems, CAD software, and municipal
+                databases.
+                Trail routes export as geoJSON, GTX, KML, and TCX files. Point data exports as CSV, geoJSON, JSON, or
+                KML for
+                seamless integration with ArcGIS, QGIS, AutoCAD, and other professional mapping platforms.
               </p>
             </div>
-            <img src="images/export.png" alt="Industry-Standard Data Export" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export.png', 'Industry-Standard Data Export')">
-          </div>   
+            <img src="images/export.png" alt="Industry-Standard Data Export"
+              class="h-64 object-cover cursor-pointer hover:opacity-80 transition"
+              onclick="openModal('images/export.png', 'Industry-Standard Data Export')">
+          </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-2">Routes Export Formats:</h2>
-          <div class="ml-4">
-              <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
-                <li><span class="font-bold">GeoJSON — </span>A lightweight, JSON-based format that's widely supported by web mapping libraries and GIS applications, making it ideal for web-based trail visualization.</li>
-                <li><span class="font-bold">GPX — </span>The standard format for GPS devices and fitness apps, containing track points with elevation and timestamp data that's perfect for importing into Garmin, Strava, or other outdoor apps.</li>
-                <li><span class="font-bold">KML — </span>Google's mapping format that works seamlessly with Google Earth and Google Maps, allowing users to view routes in 3D terrain or share via Google's ecosystem.</li>
-                <li><span class="font-bold">TCX — </span>Garmin's Training Center XML format, specifically designed for fitness tracking with detailed workout metrics like heart rate zones and performance data.</li>
-              </ul>
+              <div class="ml-4">
+                <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
+                  <li><span class="font-bold">GeoJSON — </span>A lightweight, JSON-based format that's widely supported
+                    by web mapping libraries and GIS applications, making it ideal for web-based trail visualization.
+                  </li>
+                  <li><span class="font-bold">GPX — </span>The standard format for GPS devices and fitness apps,
+                    containing track points with elevation and timestamp data that's perfect for importing into Garmin,
+                    Strava, or other outdoor apps.</li>
+                  <li><span class="font-bold">KML — </span>Google's mapping format that works seamlessly with Google
+                    Earth and Google Maps, allowing users to view routes in 3D terrain or share via Google's ecosystem.
+                  </li>
+                  <li><span class="font-bold">TCX — </span>Garmin's Training Center XML format, specifically designed
+                    for fitness tracking with detailed workout metrics like heart rate zones and performance data.</li>
+                </ul>
+              </div>
             </div>
-            </div>
-            <img src="images/export-trails.png" alt="Route Export Formats" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export-trails.png', 'Routes Export Formats')">
-          </div> 
+            <img src="images/export-trails.png" alt="Route Export Formats"
+              class="h-64 object-cover cursor-pointer hover:opacity-80 transition"
+              onclick="openModal('images/export-trails.png', 'Routes Export Formats')">
+          </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-2">POI Export Formats:</h2>
-          <div class="ml-4">
-              <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
-                <li><span class="font-bold">JSON — </span>A simple, structured text format that's easy to parse programmatically and ideal for developers who want to integrate POI data into their own applications.</li>
-                <li><span class="font-bold">CSV — </span>The universal spreadsheet format that opens in Excel or Google Sheets, perfect for non-technical users who want to edit or analyze POI data in familiar tools.</li>
-                <li><span class="font-bold">GeoJSON — </span>Same as routes - a web-friendly format that displays POI markers perfectly in mapping applications and websites.</li>
-                <li><span class="font-bold">KML — </span>Allows POIs to appear as placemarks in Google Earth with custom icons, descriptions, and the ability to organize into folders for easy navigation.</li>
-              </ul>
+              <div class="ml-4">
+                <ul class="text-med text-gray-600 leading-relaxed list-disc list-inside space-y-2">
+                  <li><span class="font-bold">JSON — </span>A simple, structured text format that's easy to parse
+                    programmatically and ideal for developers who want to integrate POI data into their own
+                    applications.</li>
+                  <li><span class="font-bold">CSV — </span>The universal spreadsheet format that opens in Excel or
+                    Google Sheets, perfect for non-technical users who want to edit or analyze POI data in familiar
+                    tools.</li>
+                  <li><span class="font-bold">GeoJSON — </span>Same as routes - a web-friendly format that displays POI
+                    markers perfectly in mapping applications and websites.</li>
+                  <li><span class="font-bold">KML — </span>Allows POIs to appear as placemarks in Google Earth with
+                    custom icons, descriptions, and the ability to organize into folders for easy navigation.</li>
+                </ul>
+              </div>
             </div>
-            </div>
-            <img src="images/export-pois.png" alt="POI Export Formats" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/export-pois.png', 'POI Export Formats')">
-          </div>           
+            <img src="images/export-pois.png" alt="POI Export Formats"
+              class="h-64 object-cover cursor-pointer hover:opacity-80 transition"
+              onclick="openModal('images/export-pois.png', 'POI Export Formats')">
+          </div>
 
         </div>
       </div>
@@ -128,7 +154,8 @@
   <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
     <div class="relative max-w-4xl w-full">
       <img id="modalImage" src="" alt="" class="w-full h-auto rounded-lg">
-      <button onclick="closeModal()" class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 transition">
+      <button onclick="closeModal()"
+        class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 transition">
         <i class="fas fa-times text-lg"></i>
       </button>
     </div>
@@ -155,7 +182,8 @@
   <footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="text-center border-t border-gray-700 pt-8">
-        <a href="https://danmorgandesigns.com" class="text-gray-400 mb-4">© 2026 Dan Morgan Designs, LLC</a><p></p>
+        <a href="https://danmorgandesigns.com" class="text-gray-400 mb-4">© 2026 Dan Morgan Designs, LLC</a>
+        <p></p>
         <a href="privacy.html" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
       </div>
     </div>
@@ -163,4 +191,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

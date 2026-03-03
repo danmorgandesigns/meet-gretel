@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
+
 <body class="bg-white">
   <!-- Navigation -->
   <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -81,39 +86,50 @@
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Professional Trail Development</h2>
               <p class="text-med text-gray-600 leading-relaxed">
-                Create detailed trail maps with GPS precision for new trail construction, existing trail documentation, and maintenance planning. 
-                Record exact routes with customizable accuracy settings to meet surveying standards. Automatically calculate trail length and elevation 
+                Create detailed trail maps with GPS precision for new trail construction, existing trail documentation,
+                and maintenance planning.
+                Record exact routes with customizable accuracy settings to meet surveying standards. Automatically
+                calculate trail length and elevation
                 profiles essential for accessibility compliance and difficulty ratings.
               </p>
             </div>
-            <img src="images/trail-dev.png" alt="Professional Trail Development" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/trail-dev.png', 'Professional Trail Development')">
+            <img src="images/trail-dev.png" alt="Professional Trail Development"
+              class="h-64 object-cover cursor-pointer hover:opacity-80 transition"
+              onclick="openModal('images/trail-dev.png', 'Professional Trail Development')">
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Route Precision and Elevation Smoothing</h2>
               <p class="text-med text-gray-600 leading-relaxed">
-                Using the Route Precision slider, the User  can customize the minimum distance between saved points as they track a route.
-                The Update Frequency slider changes the what the minimum movement needs to be before a new location update is recorded while tracking.
+                Using the Route Precision slider, the User can customize the minimum distance between saved points as
+                they track a route.
+                The Update Frequency slider changes the what the minimum movement needs to be before a new location
+                update is recorded while tracking.
               </p>
               <p class="text-med text-gray-600 leading-relaxed mt-4">
-                  Smaller values results in larger route tracking files, but make the route more detailed with smoother curves. 
-                  Larger values create smaller files, but the route may appear more angular with sharp turns.
+                Smaller values results in larger route tracking files, but make the route more detailed with smoother
+                curves.
+                Larger values create smaller files, but the route may appear more angular with sharp turns.
               </p>
             </div>
-            <img src="images/route-elevation-results.png" alt="Route Precision and Elevation Smoothing" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/route-elevation-results.png', 'Route Precision and Elevation Smoothing')">
+            <img src="images/route-elevation-results.png" alt="Route Precision and Elevation Smoothing"
+              class="h-64 object-cover cursor-pointer hover:opacity-80 transition"
+              onclick="openModal('images/route-elevation-results.png', 'Route Precision and Elevation Smoothing')">
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 class="text-2xl sm:text-2xl font-bold text-gray-900 mb-4">Unit Conversions</h2>
               <p class="text-med text-gray-600 leading-relaxed">
-                Gretel allows users to view trail distances and elevations in either Metric or Imperial units. 
-                This flexibility ensures that professionals worldwide can work with their preferred measurement systems, 
+                Gretel allows users to view trail distances and elevations in either Metric or Imperial units.
+                This flexibility ensures that professionals worldwide can work with their preferred measurement systems,
                 enhancing usability and accuracy in field mapping tasks.
               </p>
             </div>
-            <img src="images/units-conversion.png" alt="Unit Conversions" class="h-64 object-cover cursor-pointer hover:opacity-80 transition" onclick="openModal('images/units-conversion.png', 'Unit Conversions')">
+            <img src="images/units-conversion.png" alt="Unit Conversions"
+              class="h-64 object-cover cursor-pointer hover:opacity-80 transition"
+              onclick="openModal('images/units-conversion.png', 'Unit Conversions')">
           </div>
 
 
@@ -126,7 +142,8 @@
   <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
     <div class="relative max-w-4xl w-full">
       <img id="modalImage" src="" alt="" class="w-full h-auto rounded-lg">
-      <button onclick="closeModal()" class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 transition">
+      <button onclick="closeModal()"
+        class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 transition">
         <i class="fas fa-times text-lg"></i>
       </button>
     </div>
@@ -153,7 +170,8 @@
   <footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="text-center border-t border-gray-700 pt-8">
-        <a href="https://danmorgandesigns.com" class="text-gray-400 mb-4">© 2026 Dan Morgan Designs, LLC</a><p></p>
+        <a href="https://danmorgandesigns.com" class="text-gray-400 mb-4">© 2026 Dan Morgan Designs, LLC</a>
+        <p></p>
         <a href="privacy.html" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
       </div>
     </div>
@@ -161,4 +179,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
